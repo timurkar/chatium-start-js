@@ -11,11 +11,7 @@ const {
     Screen, Text, Button, Image, ListItem
 } = require('@chatium/json')
 
-const categories = require('./data/categories')
-const products = require('./data/products')
-
 const { chatiumPost, getChatiumContext, triggerHotReload } = require('@chatium/sdk')
-const { orderRepo, getOrderByAuthId, getOrCreateOrderByAuthId, startProcessingOrder } = require('./heap/orderRepo')
 
 const app = express()
 app.use(cors())
